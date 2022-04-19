@@ -7,42 +7,67 @@ login:
 cpdaily:
   #表单组默认选项配置
   defaults:
+    #表单默认选项配置，按顺序，注意，只有标必填项的才处理
     - default:
-        #表单项标题
-        title: 今天你的所在地是？
         #表单项类型，对应今日校园接口返回的fieldType字段，1代表文本，2代表单选，3代表多选，4代表图片
         type: 1
-        #表单项默认值, 三级选项选择用 '/' 分隔
-        value: 福建省/福州市/仓山区
+        #表单项标题
+        title: 你目前所在地
+        #表单项默认值
+        value: 四川省德阳市旌阳区
     - default:
-        title: 今天你的体温是多少？
         type: 2
-        value: 37.2℃及以下
-    - default:
-        title: 今天你的身体状况是？
-        type: 2
-        value: 健康
-    - default:
-        title: 近14天你或你的共同居住人是否有疫情中、高风险区域人员接触史？
-        type: 2
+        title: 最近14天内你是否离开过目前所在地
         value: 否
     - default:
-        title: 近14天你或你的共同居住人是否和确诊、疑似病人接触过？
         type: 2
+        title: 最近14天内是否接触过疑似或确诊患者或密切接触者
         value: 否
     - default:
-        title: 近14天你或你的共同居住人是否是确诊、疑似病例？
         type: 2
+        title: 最近14天内是否接触过来自重点疫区人员或密切接触者
         value: 否
     - default:
-        title: 你或你的共同居住人目前是否被医学隔离？
         type: 2
+        title: 是否被医院确定为疑似患新型冠状病毒肺炎
         value: 否
     - default:
-        title: 今天你当地的健康码颜色是？
         type: 2
-        value: 绿色
+        title: 是否被相关机构实施医学隔离
+        value: 否
     - default:
-        title: 本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处    
         type: 2
+        title: 昨日晚上实测体温
+        value: 36.1-36.9℃（正常）
+    - default:
+        type: 2
+        title: 今日早上实测体温
+        value: 36.1-36.9℃（正常）
+    - default:
+        type: 2
+        title: 今日中午实测体温
+        value: 36.1-36.9℃（正常）
+    - default:
+        type: 2
+        title: 本人当前是否有发热、乏力、干咳、呼吸困难等症状
+        value: 否
+    - default:
+        type: 2
+        title: 共同生活的家人当前是否有发热、乏力、干咳、呼吸困难等症状
+        value: 否
+    - default:
+        type: 2
+        title: 当前所居住小区（或村庄）是否有确诊病例
+        value: 否
+    - default:
+        type: 2
+        title: 疫情发生以来是否按要求在家活动，没有随意外出
+        value: 是
+    - default:
+        type: 1
+        title: 其他与疫情相关情况请说明（没有就填无）
+        value: 无
+    - default:
+        type: 2
+        title: 本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处。
         value: 是
